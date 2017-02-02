@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tim Moreton</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  <!-- Style Guide CSS -->
+  <link rel="stylesheet" href="{{ "/assets/font-awesome.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/buttons.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/flex.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/font-sizes.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/form.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/hamburger.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/modal.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/nav.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/variables.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>

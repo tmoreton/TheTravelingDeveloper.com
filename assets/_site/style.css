@@ -1,0 +1,11 @@
+header {
+	border-bottom: 1px solid var(--border);
+}
+
+.title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 20%;
+	z-index: -1;
+}

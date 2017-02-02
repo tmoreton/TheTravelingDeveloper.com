@@ -7,6 +7,13 @@
   height: 100%;
 }
 
+.menu-item {
+  text-align: center; 
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+}
+
 .dropdown {
   display: none;
   position: absolute;
@@ -44,60 +51,60 @@
   font-weight: bold;
 }
 
-  .menu {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 59px;
-    left: 0;
-    background-color: var(--white);
-    transition: 0.5s;
-    overflow: scroll;
-  }
+.menu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 59px;
+  left: 0;
+  background-color: var(--black);
+  transition: 0.5s;
+  overflow: scroll;
+}
 
-  .main, .sub {
-    border-bottom: 1px solid var(--main);
-    padding: 20px;
-  }
+.main, .sub {
+  border-bottom: 1px solid var(--main);
+  padding: 20px;
+}
 
-  .nav-item {
-    padding: 0;
-  }
+.nav-item {
+  padding: 0;
+}
 
-  .nav-item:hover .dropdown {
-    display: none;
-  }
+.nav-item:hover .dropdown {
+  display: none;
+}
 
-  .nav-item > .main:after {
-    content: "\f107";
-    font-family: FontAwesome;
-    float: right;
-    font-size: 18px;
-  }
+.nav-item > .main:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  float: right;
+  font-size: 18px;
+}
 
-  .nav-item.open > .main {
-    color: var(--main);
-  }
+.nav-item.open > .main {
+  color: var(--main);
+}
 
-  .nav-item.open > .main:after {
-    transform: rotate(180deg);
-  }
+.nav-item.open > .main:after {
+  transform: rotate(180deg);
+}
 
-  .nav-item ~ .dropdown {
-    display: none;
-  }
+.nav-item ~ .dropdown {
+  display: none;
+}
 
-  .nav-item.open > .dropdown {
-    display: block;
-  }
+.nav-item.open > .dropdown {
+  display: block;
+}
 
-  .dropdown {
-    display: none;
-    position: initial;
-    border: none;
-    margin: 0;
-  }
+.dropdown {
+  display: none;
+  position: initial;
+  border: none;
+  margin: 0;
+}
 
 @media only screen and (max-width :768px) {
 
